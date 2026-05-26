@@ -22,24 +22,24 @@ export const siteConfig = {
 
   // ── 1. INFORMATIONS BUSINESS ───────────────────────────────────────────────
   business: {
-    name:     '[NOM DE L\'ENTREPRISE]',
-    tagline:  '[VOTRE SLOGAN ICI]',
-    industry: 'services',          // utilisé pour schema.org + choix de contenu IA
+    name:     'BL Chauffage',
+    tagline:  'Votre expert plomberie, chauffage et climatisation',
+    industry: 'plumber',          // utilisé pour schema.org + choix de contenu IA
     icon:     'wrench',            // Icône de métier (Phosphor icon name sans le préfixe ph-)
-    phone:    '+33 6 00 00 00 00',
-    email:    'contact@votre-domaine.fr',
+    phone:    '07 84 54 57 77',
+    email:    'contact@bl-chauffage.fr',
     address: {
-      street:     '[RUE ET NUMÉRO]',
-      city:       '[VILLE]',
-      postalCode: '[CODE POSTAL]',
+      street:     '4 route Minorville',
+      city:       'Manonville',
+      postalCode: '54385',
       country:    'FR',
     },
     openingHours: {
-      monday:    '09:00-18:00',
-      tuesday:   '09:00-18:00',
-      wednesday: '09:00-18:00',
-      thursday:  '09:00-18:00',
-      friday:    '09:00-18:00',
+      monday:    '08:00-19:00',
+      tuesday:   '08:00-19:00',
+      wednesday: '08:00-19:00',
+      thursday:  '08:00-19:00',
+      friday:    '08:00-19:00',
       saturday:  null,
       sunday:    null,
     },
@@ -49,35 +49,35 @@ export const siteConfig = {
       facebook:  '',
       twitter:   '',
     },
-    siret:        '000 000 000 00000',
+    siret:        '',
     availability: 'Disponible',
     urgency: {
       active:    true,
-      label:     'Urgence 24h/7j',
-      phone:     '+33 6 00 00 00 00',
+      label:     'Dépannage Rapide',
+      phone:     '07 84 54 57 77',
     },
     serviceArea: [
-      '[Ville principale]',
-      '[Ville 2]',
-      '[Ville 3]',
-      '[Département XX]',
+      'Manonville',
+      'Domèvre-en-Haye',
+      'Saizerais',
+      'Meurthe-et-Moselle',
     ],
     certifications: [
-      { label: 'Garantie décennale', sublabel: 'Assurance RC Pro incluse',          icon: '🛡️' },
-      { label: 'RGE',                sublabel: 'Reconnu Garant de l\'Environnement', icon: '🌿' },
-      { label: 'Qualibat',           sublabel: 'Artisan certifié qualité',            icon: '✅' },
+      { label: 'Fluides frigorigènes', sublabel: 'Aptitude certifiée',          icon: '❄️' },
+      { label: 'Expérience',                sublabel: 'Installations et réparations', icon: '🔧' },
+      { label: 'Normes',           sublabel: 'Sécurité et environnement respectés',            icon: '✅' },
     ],
     assurance: {
-      name:   '[Nom de l\'assureur]',
-      numero: '[N° police RC Pro]',
+      name:   '',
+      numero: '',
     },
   },
 
   // ── 2. BRANDING ────────────────────────────────────────────────────────────
   branding: {
-    primaryColor:    '#0266FF',   // Bleu AL Plomberie
-    primaryDark:     '#0047BB',
-    primarySoft:     '#f8fafc',
+    primaryColor:    '#1d62c8',   // Bleu Plombier
+    primaryDark:     '#1550a8',
+    primarySoft:     '#dbeafe',
     secondaryColor:  '#0f172a',
     accentColor:     '#f08c00',   // Orange urgence
     fontHeading:     'Outfit',
@@ -89,13 +89,14 @@ export const siteConfig = {
 
   // ── 3. SEO ─────────────────────────────────────────────────────────────────
   seo: {
-    titleTemplate:      '%s | [NOM DE L\'ENTREPRISE]',
-    defaultTitle:       '[NOM DE L\'ENTREPRISE] — [ACTIVITÉ PRINCIPALE]',
-    defaultDescription: 'Description courte de vos services et de votre valeur ajoutée pour vos clients.',
+    titleTemplate:      '%s | BL Chauffage',
+    defaultTitle:       'BL Chauffage — Plomberie, Chauffage et Climatisation à Manonville',
+    defaultDescription: 'BL Chauffage offre des services de plomberie, chauffage et climatisation de haute qualité. Intervention rapide sur Manonville et environs.',
     keywords: [
-      'mot-clé 1',
-      'mot-clé 2',
-      'mot-clé 3',
+      'Plombier Manonville',
+      'Dépannage chauffage',
+      'Climatisation PAC',
+      'Plomberie Meurthe-et-Moselle',
     ],
     googleBusinessUrl:   '',
     googleAnalyticsId:   '',
@@ -176,88 +177,76 @@ export const siteConfig = {
   content: {
 
     hero: {
-      eyebrow:  '[SOUSTITRE / ACTIVITÉ]',
-      h1:       '[TITRE PRINCIPAL CAPTIVANT]',
-      subtitle: '[Description détaillée de ce que vous faites et pourquoi vous êtes le meilleur choix pour vos clients.]',
-      image:    '/assets/images/placeholder-hero.png',
-      cta1:     { label: '[BOUTON PRINCIPAL]', href: '#contact' },
-      cta2:     { label: '[BOUTON SECONDAIRE]', href: '#services' },
-      trust:    ['[Argument 1]', '[Argument 2]', '[Argument 3]'],
-      badge:    { label: '[LABEL]', value: '[VALEUR]', sub: '[DÉTAIL]' },
-      infoCard: { status: 'Disponible', hours: 'Lun–Ven · 9h–18h', location: '[VOTRE ADRESSE]' },
+      eyebrow:  '— VOTRE ARTISAN DE CONFIANCE',
+      h1:       'Plomberie, Chauffage & Climatisation',
+      subtitle: 'BL Chauffage assure le bon fonctionnement de vos installations : réparations, installations neuves et entretiens réguliers. Intervention rapide garantie !',
+      image:    '/assets/images/hero.png',
+      cta1:     { label: 'Demander une intervention', href: '#contact' },
+      cta2:     { label: 'Nos services', href: '#services' },
+      trust:    ['Intervention rapide', 'Satisfaction client', 'Aptitude fluides frigorigènes'],
+      badge:    { label: 'Note', value: '5/5', sub: 'Pages Jaunes' },
+      infoCard: { status: 'Disponible', hours: 'Lun–Ven · 8h–19h', location: 'Manonville (54)' },
     },
 
     services: {
       eyebrow:  '— Nos prestations',
-      title:    '[TITRE DE LA SECTION SERVICES]',
-      subtitle: '[Introduction à vos services et votre savoir-faire.]',
+      title:    'Notre Savoir-Faire',
+      subtitle: 'De la réparation d\'urgence à l\'installation complète, nous répondons à toutes vos exigences.',
       items: [
         {
-          icon:  'star',
-          title: '[Service 1]',
-          text:  '[Description courte du service 1 expliquant les bénéfices.]',
+          icon:  'drop',
+          title: 'Plomberie & Sanitaires',
+          text:  'Intervention rapide pour tout travail de dépannage, réparation de fuites ou installation de vos sanitaires.',
           link:  'En savoir plus →',
-          tag:   '[Tag/Info]',
-          features: ['[Caractéristique 1]', '[Caractéristique 2]', '[Caractéristique 3]'],
+          tag:   'Dépannage rapide',
+          features: ['Recherche et réparation de fuites', 'Pose de sanitaires', 'Amélioration de l\'habitat'],
         },
         {
-          icon:  'check',
-          title: '[Service 2]',
-          text:  '[Description courte du service 2 expliquant les bénéfices.]',
+          icon:  'fire',
+          title: 'Chauffage',
+          text:  'Assurez votre confort thermique avec nos services d\'entretien, réparation et pose de systèmes de chauffage.',
           link:  'En savoir plus →',
-          tag:   '[Tag/Info]',
-          features: ['[Caractéristique 1]', '[Caractéristique 2]', '[Caractéristique 3]'],
+          tag:   'Entretien & Installation',
+          features: ['Dépannage chauffage', 'Installations neuves', 'Entretiens réguliers'],
         },
         {
-          icon:  'shield',
-          title: '[Service 3]',
-          text:  '[Description courte du service 3 expliquant les bénéfices.]',
+          icon:  'wind',
+          title: 'Climatisation & PAC',
+          text:  'Nous possédons la qualification d\'aptitude en manipulation des fluides frigorigènes pour vos installations.',
           link:  'En savoir plus →',
-          tag:   '[Tag/Info]',
-          features: ['[Caractéristique 1]', '[Caractéristique 2]', '[Caractéristique 3]'],
+          tag:   'Agréé fluides',
+          features: ['Pompes à Chaleur (PAC)', 'Climatisation réversible', 'Maintenance et sécurité'],
         },
       ],
     },
 
     about: {
       eyebrow: '— À propos',
-      title:   '[QUI SOMMES-NOUS ?]',
+      title:   'L\'Exigence de la Qualité',
       text: [
-        '[Paragraphe 1 : Présentez votre histoire et votre mission.]',
-        '[Paragraphe 2 : Expliquez votre approche et vos valeurs.]',
+        'Chez BL Chauffage, nous offrons des services de plomberie, chauffage et climatisation de haute qualité afin de répondre à toutes vos exigences. Cette petite entreprise expérimentée vous assure le bon fonctionnement de vos installations, que ce soit pour des réparations, des installations neuves ou une amélioration de votre habitat.',
+        'Nous privilégions la satisfaction de nos clients en proposant des solutions efficaces et durables, tout en respectant scrupuleusement les normes de sécurité et d\'environnement.',
       ],
       stats: [
-        { value: '[XX]',   label: '[Label 1]' },
-        { value: '[XX]+',  label: '[Label 2]' },
-        { value: '[X.X]',  label: '[Label 3]' },
+        { value: '5/5',   label: 'Avis Pages Jaunes' },
+        { value: '100%',  label: 'Satisfaction Client' },
+        { value: '24h',  label: 'Réactivité' },
       ],
-      cta:    { label: '[EN SAVOIR PLUS]', href: '#contact' },
-      image:  '/assets/images/placeholder-about.png',
-      author: { name: '[NOM]', role: '[RÔLE]', image: '/assets/images/placeholder-portrait.png' },
+      cta:    { label: 'Contactez-nous', href: '#contact' },
+      image:  '/assets/images/about.png',
+      author: { name: 'BL Chauffage', role: 'Artisan Expert', image: '/assets/images/portrait.png' },
     },
 
     testimonials: {
       eyebrow:   '— Témoignages',
-      title:     '[TITRE TÉMOIGNAGES]',
-      ratingStr: '[X.X] / 5 · [XX] avis clients',
+      title:     'Ce que pensent nos clients',
+      ratingStr: '5 / 5 · Avis Pages Jaunes',
       items: [
         {
-          quote:   '[Citation du client 1 : Expliquez comment vous avez aidé ce client.]',
-          name:    '[NOM CLIENT 1]',
-          role:    '[RÔLE / ENTREPRISE]',
-          initial: 'C',
-        },
-        {
-          quote:   '[Citation du client 2 : Expliquez comment vous avez aidé ce client.]',
-          name:    '[NOM CLIENT 2]',
-          role:    '[RÔLE / ENTREPRISE]',
-          initial: 'C',
-        },
-        {
-          quote:   '[Citation du client 3 : Expliquez comment vous avez aidé ce client.]',
-          name:    '[NOM CLIENT 3]',
-          role:    '[RÔLE / ENTREPRISE]',
-          initial: 'C',
+          quote:   'Plombier au top du top Je recommande à 200% Intervenu en urgence pour un problème de chauffe eau, il est venu après sa longue journée de travail en début de soirée pour pas me laisser sans eau chaude Personne très agréable, réactif et à l’écoute ++++',
+          name:    'valentdelay',
+          role:    'Client Pages Jaunes',
+          initial: 'V',
         },
       ],
     },
@@ -313,19 +302,19 @@ export const siteConfig = {
     },
 
     cta: {
-      eyebrow:  '[APPEL À L\'ACTION]',
-      title:    '[PRÊT À DÉMARRER ?]',
-      subtitle: '[Dernière phrase d\'incitation pour contacter l\'entreprise.]',
-      cta1:     { label: '[CONTACT]', href: '#contact' },
-      cta2:     { label: '[DÉCOUVRIR]',  href: '#services' },
+      eyebrow:  '— INTERVENTION RAPIDE',
+      title:    'Un problème de chauffage ou de plomberie ?',
+      subtitle: 'N\'attendez plus, contactez-nous dès maintenant pour une intervention efficace et durable.',
+      cta1:     { label: 'Appeler le 07 84 54 57 77', href: 'tel:0784545777' },
+      cta2:     { label: 'Nous contacter',  href: '#contact' },
     },
 
     contact: {
       eyebrow:        '— Contact',
-      title:          '[TITRE CONTACT]',
-      subtitle:       '[Décrivez ce que le client doit faire pour vous contacter.]',
+      title:          'Demandez votre devis gratuit',
+      subtitle:       'Nous sommes à votre disposition pour toute demande d\'intervention sur Manonville et ses environs.',
       successMessage: 'Message bien reçu — nous vous répondons rapidement.',
-      formTypes:      ['Demande de devis', 'Urgence', 'Question', 'Autre'],
+      formTypes:      ['Dépannage d\'urgence', 'Installation', 'Entretien', 'Autre demande'],
     },
     certifications: {
       eyebrow:  '— Certifications & Garanties',
@@ -334,7 +323,7 @@ export const siteConfig = {
     },
 
     footer: {
-      description: '[Description courte de l\'entreprise pour le bas de page.]',
+      description: 'BL Chauffage : votre expert plomberie, chauffage et climatisation basé à Manonville. Qualité, efficacité et sécurité.',
       links: [
         { label: 'Services',  href: '#services' },
         { label: 'À propos',  href: '#apropos' },
